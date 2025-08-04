@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="TrabajoPracticoCSSParte2_EJ6.css" title="style" />
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Nombre:</label>
+        </div>
+        <div>
+            <input type="text" name="nombre" maxlength="25">
+        </div>
+        <div>
+            <label>Apellido:</label>
+        </div>
+        <div>
+            <input type="text" name="apellido" maxlength="25">
+        </div>
+        <div>
+            <label>Dirección:</label>
+        </div>
+        <div>
+            <textarea name="direccion" maxlength="30"></textarea>
+        </div>
+        <div>
+            <label>Teléfono:</label>
+        </div>
+        <div>
+            <input type="text" name="telefono" maxlength="15" value="0299">
+        </div>
+  
+        <div>
+            <label>Tipo de operación:</label>
+        </div>
+        <div>
+          <input type="radio" name="operacion" value="alquiler"> Alquiler
+          <input type="radio" name="operacion" value="compra" checked> Compra
+        </div>
+  
+        <div>
+            <label>Zonas de interés:</label>
+        </div>
+        <div>
+          <input type="checkbox" name="zona_centro" checked> Zona Centro
+        </div>
+        <div>
+            <input type="checkbox" name="zona_norte"> Zona Norte
+        </div>
+        <div>
+          <input type="checkbox" name="zona_sur" checked> Zona Sur
+        </div>
+  
+        <div>
+            <label>Comentario del inmueble:</label>
+        </div>
+        <div>
+            <textarea name="comentario_inmueble" rows="4" cols="50"></textarea>
+        </div>
+
+        <input type="reset" value="Resetear">
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
