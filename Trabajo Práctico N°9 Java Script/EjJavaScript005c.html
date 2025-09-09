@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5c</title>
+    <script type="text/javascript">
+        function pad(){
+			var n1,total1,salida; 
+			n1=prompt("Ingrese el valor en pesos:");
+			total1=(n1)/1361.22;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' pesos argentinos son: '+total1+' dolares \n'; 
+		}
+        function dap(){
+			var n1,total2,salida; 
+			n1=prompt("Ingrese el valor en dolares:");
+			total2=(n1)*1361.22;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' dolares son: '+total2+' pesos argentinos \n'; 
+		}
+        function par(){
+			var n1,total3,salida; 
+			n1=prompt("Ingrese el valor en pesos:");
+			total3=(n1)/249.71;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' pesos argentinos son: '+total3+' reales \n'; 
+		}
+        function rap(){
+			var n1,total4,salida; 
+			n1=prompt("Ingrese el valor en reales:");
+			total4=(n1)*249.71;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' reales son: '+total4+' pesos argentinos \n'; 
+		}
+        function pae(){
+			var n1,total5,salida; 
+			n1=prompt("Ingrese el valor en pesos:");
+			total5=(n1)/1587.24;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' pesos argentinos son: '+total5+' euros \n'; 
+		}
+        function eap(){
+			var n1,total6,salida; 
+			n1=prompt("Ingrese el valor en euros:");
+			total6=(n1)*1587.24;
+			salida=document.getElementById("salida");
+			salida.value+=n1+' euros son: '+total6+' pesos argentinos \n'; 
+		}
+    </script>
+</head>
+<body>
+    <button onclick="pad()">Pesos a dolares</button>
+    <button onclick="dap()">Dolares a pesos</button>
+    <button onclick="par()">Pesos a reales</button>
+    <button onclick="rap()">Reales a pesos</button>
+    <button onclick="pae()">Pesos a euros</button>
+    <button onclick="eap()">Euros a pesos</button>
+
+    <h2> Resultados</h2>
+
+    <textarea id="salida" name="salida" rows="10" cols="50"></textarea>
+</body>
+</html>

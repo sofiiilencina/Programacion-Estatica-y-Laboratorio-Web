@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7e</title>
+    <script>
+    function esPrimo(n) {
+      var primo = 1;
+      if (n < 2) {
+        primo = 0;
+      } else {
+        for (var x = 2; x < n; x++) {
+          if (n % x === 0) {
+            primo = 0;
+            break; 
+          }
+        }
+      }
+      return primo; 
+    }
+
+    function mostrarPrimos() {
+      var salida = "";
+      for (var i = 0; i < 100; i++) {
+        if (esPrimo(i) == 1) {
+          salida += "<li>" + i + "</li>";
+        }
+      }
+      document.getElementById("resultado").innerHTML = "<ul>" + salida + "</ul>";
+    }
+  </script>
+</head>
+<body>
+    <body onload="mostrarPrimos()">
+    <h1>Números Primos menores a 100</h1>
+    <div id="resultado"></div>
+</body>
+</html>
