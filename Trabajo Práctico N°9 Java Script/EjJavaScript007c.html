@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7c</title>
+    <script type="text/javascript">
+    function mostrarFuncion() {
+      var salida = "";
+      for (var x = 0; x <= 100; x++) {
+        var fx = 3 * x + 5 - (x * x);
+        salida += "f(" + x + ") = " + fx + "<br>";
+      }
+      document.getElementById("resultado").innerHTML = salida;
+    }
+  </script>
+</head>
+<body onload="mostrarFuncion()">
+  <div id="resultado"></div>
+</body>
+</html>

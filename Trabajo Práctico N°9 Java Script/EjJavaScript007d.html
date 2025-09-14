@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7d</title>
+    <script type="text/javascript">
+    function factorial(num) {
+      var resultado = 1;
+      for (var i = 1; i <= num; i++) {
+        resultado = resultado * i;
+      }
+      return resultado;
+    }
+
+    function calcular() {
+      var num = parseInt(prompt("Ingrese un número:"));
+      var resultado = factorial(num);
+      document.getElementById("resultado").innerText =
+        "Factorial de " + num + " es " + resultado;
+    }
+  </script>
+</head>
+<body onload="calcular()">
+    <h1>Factorial</h1>
+  <div id="resultado"></div>
+</body>
+</html>
